@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy | Personal Bank Overview</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="bar"><a class="brand" href="index.html">Personal Bank Overview</a><nav aria-label="Policies"><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a></nav></div></header>
+<main>
+<h1>Privacy Policy</h1>
+<time datetime="2026-11-13">Last updated 13 November 2026</time>
+<p>Personal Bank Overview is privately operated by the account holder for their own non-commercial use. For privacy questions, use the application's data protection contact in Enable Banking's consent interface.</p>
+<h2>What the application processes</h2>
+<p>Through Enable Banking, the application reads booked euro transactions and balances from the owner's authorized ABN AMRO and ING payment accounts. It uses these data for local recordkeeping and personal financial summaries. Provider responses may include account numbers, counterparty details and descriptions. The application handles the responses in memory and does not persist those fields or raw responses.</p>
+<p>The local database retains bank labels, hashed account and booking references, temporary provider account IDs, consent session IDs and expiry dates, booking dates and amounts, balance amounts and types, available balance reference dates, and synchronization dates and requested date ranges.</p>
+<h2>Authorization and local storage</h2>
+<p>The owner authenticates with the bank. The application does not collect or store bank passwords, PINs or one-time bank authentication codes. It validates the local authorization callback and exchanges the authorization code with Enable Banking. API calls use HTTPS and short-lived tokens signed with a local RSA key. The private key is passphrase-encrypted. The passphrase is entered interactively and is not saved.</p>
+<p>The SQLite database and application configuration are stored in the owner's Windows profile, normally under <code>%LOCALAPPDATA%&#92;Bankoverzicht</code>. The database itself is unencrypted. Protection on disk depends on Windows access controls and any disk encryption enabled by the owner.</p>
+<h2>When data may be shared</h2>
+<p>The bank and Enable Banking process information to authorize and provide account access under their own privacy notices. See the <a href="https://enablebanking.com/privacy/">Enable Banking Privacy Notice</a>.</p>
+<p>The application previews a report and writes it to the owner's chosen location after explicit confirmation. A default report contains monthly totals, booking counts and synchronization and connection status per account. The owner can add balances or individual booking dates and amounts. If the owner saves the report in a synced folder or uploads it to Google Drive, Google may receive a copy. If the owner uses a report with ChatGPT or the optional local Codex tool, the report contents may be sent to OpenAI. The application itself has no automatic cloud upload or scheduled sharing.</p>
+<h2>Retention and removal</h2>
+<p>Local history has no automatic expiry. The owner can end the connection, check revocation with the bank and delete the local history. Ending access leaves existing history on disk. Exported reports, backups and copies in other services must be removed separately.</p>
+<h2>This website</h2>
+<p>These policy pages have no forms, scripts or embedded analytics. GitHub Pages hosts them and may process visitor information such as IP addresses. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>.</p>
+</main>
+</body>
+</html>
